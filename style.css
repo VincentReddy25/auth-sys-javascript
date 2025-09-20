@@ -1,0 +1,96 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	background: #fff;
+	padding: 2rem 1.5rem;
+	border-radius: 12px;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+	max-width: 350px;
+	width: 100%;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.form h2 {
+	margin-bottom: 0.5rem;
+	color: #2d3a4b;
+	text-align: center;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.form-group label {
+	font-size: 1rem;
+	color: #4b5d6e;
+}
+
+.form-group input {
+	padding: 0.7rem;
+	border: 1px solid #dbeafe;
+	border-radius: 6px;
+	font-size: 1rem;
+	outline: none;
+	transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+	border-color: #66a6ff;
+}
+
+.btn {
+	padding: 0.8rem;
+	background: linear-gradient(90deg, #66a6ff 0%, #89f7fe 100%);
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	font-size: 1rem;
+	cursor: pointer;
+	font-weight: 600;
+	transition: background 0.2s;
+}
+
+.btn:hover {
+	background: linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+.switch-link {
+	text-align: center;
+	font-size: 0.95rem;
+	color: #4b5d6e;
+}
+
+.switch-link a {
+	color: #66a6ff;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+@media (max-width: 500px) {
+	.container {
+		padding: 1.2rem 0.5rem;
+		max-width: 95vw;
+	}
+	.form h2 {
+		font-size: 1.3rem;
+	}
+	.btn {
+		font-size: 0.95rem;
+	}
+}
